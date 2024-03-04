@@ -56,3 +56,5 @@ then use GNU stow to create symlinks
 # to overwrite existing configurations
 $ stow --adopt .
 ```
+
+Note that many scripts in [/scritps](scripts/) do not work properly
