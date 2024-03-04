@@ -64,12 +64,12 @@ typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯❯�
 source $ZSHRC_DIR/.ssh_aliases
 
 # scripts
-source $ZSHRC_DIR/scripts/mvc 
-source $ZSHRC_DIR/scripts/cloc-git
-source $ZSHRC_DIR/scripts/extract
-source $ZSHRC_DIR/scripts/back
-source $ZSHRC_DIR/scripts/lg
-source $ZSHRC_DIR/scripts/air
+source $ZSHRC_DIR/scripts/mvc.sh
+source $ZSHRC_DIR/scripts/cloc-git.sh
+source $ZSHRC_DIR/scripts/extract.sh
+source $ZSHRC_DIR/scripts/back.sh
+source $ZSHRC_DIR/scripts/lg.sh
+source $ZSHRC_DIR/scripts/air.sh
 
 eval "$(zoxide init --cmd cd zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
