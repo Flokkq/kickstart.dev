@@ -6,6 +6,8 @@ This directory contains the dotfiles for my system
 
 Ensure you have the following installed on your system
 
+There is also an [installation script](scripts/install.sh) that you can use to install all dependencies (works for most Linux distros aswell)
+
 ### Stow
 
 ```bash
@@ -26,15 +28,13 @@ brew install --cask iterm2
 
 ### tmux
 
-Note that you have to install all plugins in `.tmux/plugins` need to be installed manually
-
 ```bash
 brew install tmux
 ```
 
 ### Nerdfonts
 
-Note that you need to install nerd-fonts regularly [here](https://github.com/ryanoasis/nerd-fonts.git)
+Note that you need to install nerd-fonts regularly from [Github](https://github.com/ryanoasis/nerd-fonts.git)
 
 ```bash
 git clone --depth 1
