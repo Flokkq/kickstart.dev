@@ -26,6 +26,8 @@ brew install --cask iterm2
 
 ### tmux
 
+Note that you have to install all plugins in `.config/tmux/plugins` need to be installed manually
+
 ```bash
 brew install tmux
 ```
