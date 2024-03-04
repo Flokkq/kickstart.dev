@@ -1,2 +1,0 @@
-alias sshpi='sshpass -p "12345678a" ssh flokkq@10.0.0.192'
-
