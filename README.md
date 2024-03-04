@@ -1,6 +1,6 @@
-# Welcome to my dotfiles 👋
+# Welcome to kickstart.dev 👋
 
-This directory contains the dotfiles for my system
+This repository contains all my tools that i use for developing!
 
 ## Requirements
 
