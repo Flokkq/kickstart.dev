@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export GOPATH=$HOME/go
 
 ICLOUD_DIR="/Users/clemensweber/Library/Mobile Documents/com~apple~CloudDocs"
-ZSHRC_DIR="$HOME/dotfiles"
+ZSHRC_DIR="$HOME/kickstart.dev/"
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 plugins=(
@@ -19,7 +19,7 @@ plugins=(
 )
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="awesomepanda" # set by `omz`
 
 source $ZSH/oh-my-zsh.sh
 
@@ -52,6 +52,7 @@ alias updateos="softwareupdate -i -a"
 
 # alias custom
 alias speedtest="curl -o /dev/null cachefly.cachefly.net/250mb.test"
+alias air="~/bin/air"
 
 # alias zsh
 alias editzsh="nvim $ZSHRC_DIR/.zshrc"
@@ -69,7 +70,7 @@ source $ZSHRC_DIR/scripts/cloc-git.sh
 source $ZSHRC_DIR/scripts/extract.sh
 source $ZSHRC_DIR/scripts/back.sh
 source $ZSHRC_DIR/scripts/lg.sh
-source $ZSHRC_DIR/scripts/air.sh
+# source $ZSHRC_DIR/scripts/air.sh
 
 eval "$(zoxide init --cmd cd zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

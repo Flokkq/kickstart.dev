@@ -78,6 +78,7 @@ return {
 				graphql = {},
 				html = {},
 				jsonls = {},
+				htmx = {},
 				lua_ls = {
 					settings = {
 						Lua = {
