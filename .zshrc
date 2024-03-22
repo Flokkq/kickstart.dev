@@ -19,7 +19,7 @@ plugins=(
 )
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-ZSH_THEME="awesomepanda" # set by `omz`
+ZSH_THEME="norm" # set by `omz`
 
 source $ZSH/oh-my-zsh.sh
 

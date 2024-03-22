@@ -1,5 +1,7 @@
 .ssh_aliases
 .git
-scripts
+.gitignore
+scripts/
 README.md
 terminalcolors
+package-managers/
