@@ -11,8 +11,8 @@ return {
 					illuminate = true,
 					indent_blankline = {
 						enabled = false,
-						scope_color = "sapphire",
-						colored_indent_levels = false,
+						scope_color = "base",
+						colored_indent_levels = true,
 					},
 					mason = true,
 					native_lsp = { enabled = true },

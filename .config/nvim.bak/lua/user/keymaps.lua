@@ -5,7 +5,6 @@ local tnoremap = require("user.keymap_utils").tnoremap
 local xnoremap = require("user.keymap_utils").xnoremap
 local harpoon_ui = require("harpoon.ui")
 local harpoon_mark = require("harpoon.mark")
-local conform = require("conform")
 local utils = require("user.utils")
 
 local M = {}
@@ -155,7 +154,6 @@ nnoremap("[w", function()
 	vim.api.nvim_feedkeys("zz", "n", false)
 end)
 
--- Open the diagnostic under the cursor in a float window
 nnoremap("<leader>d", function()
 	vim.diagnostic.open_float({
 		border = "rounded",
@@ -184,9 +182,7 @@ nnoremap("<leader>m", ":MaximizerToggle<cr>")
 nnoremap("<leader>=", "<C-w>=")
 
 -- Press leader f to format
-nnoremap("<leader>f", function()
-	conform.format({ async = true, lsp_fallback = true })
-end, { desc = "Format the current buffer" })
+nnoremap("<leader>f", ":Format<cr>")
 
 -- Press leader rw to rotate open windows
 nnoremap("<leader>rw", ":RotateWindows<cr>", { desc = "[R]otate [W]indows" })
@@ -240,6 +236,7 @@ nnoremap("<leader>5", function()
 end)
 
 -- Git keymaps --
+nnoremap("<leader>gl", ":LazyGit<cr>", { desc = "Open LazyGit window" })
 nnoremap("<leader>gb", ":Gitsigns toggle_current_line_blame<cr>")
 nnoremap("<leader>gf", function()
 	local cmd = {
@@ -355,14 +352,14 @@ vnoremap("L", "$<left>")
 vnoremap("H", "^")
 
 -- Paste without losing the contents of the register
+xnoremap("<leader>p", '"_dP')
+
+-- Move selected text up/down in visual mode
 vnoremap("<A-j>", ":m '>+1<CR>gv=gv")
 vnoremap("<A-k>", ":m '<-2<CR>gv=gv")
 
-xnoremap("<leader>p", '"_dP')
-
 -- Reselect the last visual selection
 xnoremap("<<", function()
-	-- Move selected text up/down in visual mode
 	vim.cmd("normal! <<")
 	vim.cmd("normal! gv")
 end)

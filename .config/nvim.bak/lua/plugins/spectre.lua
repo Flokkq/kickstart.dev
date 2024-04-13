@@ -25,11 +25,6 @@ return {
 						desc = "send all items to quickfix",
 					},
 				},
-				replace_engine = {
-					sed = {
-						cmd = "sed",
-					},
-				},
 			})
 		end,
 	},

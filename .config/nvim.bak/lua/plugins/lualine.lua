@@ -11,11 +11,11 @@ return {
 				end
 
 				-- Match the branch name to the specified format
-				local user, team, ticket_number = string.match(branch, "^(%w+)/(%w+)%-(%d+)")
+				local _, _, ticket_number = string.find(branch, "skdillon/sko%-(%d+)%-")
 
-				-- If the branch name matches the format, display {user}/{team}-{ticket_number}, otherwise display the full branch name
+				-- If the branch name matches the format, display sko-{ticket_number}, otherwise display the full branch name
 				if ticket_number then
-					return user .. "/" .. team .. "-" .. ticket_number
+					return "sko-" .. ticket_number
 				else
 					return branch
 				end

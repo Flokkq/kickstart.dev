@@ -53,6 +53,9 @@ alias updateos="softwareupdate -i -a"
 # alias custom
 alias speedtest="curl -o /dev/null cachefly.cachefly.net/250mb.test"
 alias air="~/bin/air"
+alias at="echo @ | pbcopy"
+alias ip="ifconfig -a | egrep -A 7 '^en0' | grep inet | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | head -n 1"
+alias path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
 # alias zsh
 alias editzsh="nvim $ZSHRC_DIR/.zshrc"
@@ -62,13 +65,13 @@ alias reloadzsh="source $ZSHRC_DIR/.zshrc"
 typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯❯❯'
 
 # ssh connections
-source $ZSHRC_DIR/.ssh_aliases
+# source $ZSHRC_DIR/.ssh_aliases
 
 # scripts
 source $ZSHRC_DIR/scripts/mvc.sh
 source $ZSHRC_DIR/scripts/cloc-git.sh
 source $ZSHRC_DIR/scripts/extract.sh
-source $ZSHRC_DIR/scripts/back.sh
+# source $ZSHRC_DIR/scripts/back.sh
 source $ZSHRC_DIR/scripts/lg.sh
 # source $ZSHRC_DIR/scripts/air.sh
 
