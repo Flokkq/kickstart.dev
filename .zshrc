@@ -38,6 +38,7 @@ alias ll="eza -lh"
 alias la="eza -A"
 
 # alias git
+alias git="LC_ALL=en_US git"
 alias gs="git status"
 alias ga="git add"
 alias grm="git rm"
