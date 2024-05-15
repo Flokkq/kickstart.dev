@@ -47,16 +47,17 @@ alias gc="git commit"
 alias gp="git push"
 alias gl="git pull"
 alias ghist="git log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate"
+alias gb="git blame --color-lines"
+alias gd="git diff"
 
 # alias os
 alias updateos="softwareupdate -i -a"
 
 # alias custom
+alias psql-docker='psql -h localhost -p 5432 -U postgres -d postgres'
 alias speedtest="curl -o /dev/null cachefly.cachefly.net/250mb.test"
 alias air="~/bin/air"
 alias at="echo @ | pbcopy"
-alias ip="ifconfig -a | egrep -A 7 '^en0' | grep inet | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | head -n 1"
-alias path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
 # alias zsh
 alias editzsh="nvim $ZSHRC_DIR/.zshrc"
