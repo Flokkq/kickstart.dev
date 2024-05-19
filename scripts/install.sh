@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the path to the README.md file
-README_PATH="$HOME/dotfiles/README.md"
+README_PATH="$HOME/kickstart.dev/README.md"
 
 # Initialize an empty array for dependencies
 DEPENDENCIES=()
@@ -55,7 +55,6 @@ if [ -f /etc/os-release ]; then
             ;;
     esac
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # macOS
     if ! command -v brew &> /dev/null; then
         echo "Installing Homebrew..."
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
