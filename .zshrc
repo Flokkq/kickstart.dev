@@ -7,6 +7,7 @@ fi
 
 export ZSH="$HOME/.oh-my-zsh"
 export GOPATH=$HOME/go
+export SHELL=$(which zsh)
 
 ICLOUD_DIR="/Users/clemensweber/Library/Mobile Documents/com~apple~CloudDocs"
 ZSHRC_DIR="$HOME/kickstart.dev/"
