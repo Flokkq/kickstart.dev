@@ -8,6 +8,8 @@ Ensure you have the following installed on your system:
 
 - [neovim](https://github.com/neovim/neovim)
 - [tmux](https://github.com/tmux/tmux)
+- [zsh](https://www.zsh.org/)
+ - [omz](https://github.com/ohmyzsh/ohmyzsh)
 - [GNU Stow](https://www.gnu.org/software/stow/)
 - [A Nerd Font of your choice](https://github.com/ryanoasis/nerd-fonts)
 
