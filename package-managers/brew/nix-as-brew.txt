@@ -1,0 +1,34 @@
+bat
+binwalk
+btop
+bunyan
+cloc
+cmake
+cyberchef
+emscripten
+exa # Note: eza might be a typo; exa is the likely intended package
+foremost
+fzf
+gh
+git
+git-lfs
+jq
+mongosh
+neofetch
+neovim
+nmap
+node
+exiftool # for perl5.38.2-Image-ExifTool
+postgresql
+radare2
+ripgrep
+rsbkb
+sea-orm-cli
+sshpass
+stow
+texlive
+tmux
+yarn
+zathura
+zoxide
+zsh
