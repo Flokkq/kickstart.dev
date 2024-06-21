@@ -6,12 +6,12 @@ This repository contains the configuration for all the tools I use.
 
 Ensure you have the following installed on your system:
 
-- [neovim](https://github.com/neovim/neovim) - A hyperextensible Vim-based text editor.
-- [tmux](https://github.com/tmux/tmux) - A terminal multiplexer.
-- [zsh](https://www.zsh.org/) - A powerful shell.
-  - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) - A delightful framework for managing your zsh configuration.
-- [GNU Stow](https://www.gnu.org/software/stow/) - A symlink manager.
-- [A Nerd Font of your choice](https://github.com/ryanoasis/nerd-fonts) - Iconic font pack.
+- [neovim](https://github.com/neovim/neovim)
+- [tmux](https://github.com/tmux/tmux)
+- [zsh](https://www.zsh.org/)
+  - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [GNU Stow](https://www.gnu.org/software/stow/)
+- [A Nerd Font of your choice](https://github.com/ryanoasis/nerd-fonts)
 
 > The requirements are only necessary if you want to copy the configuration. They do not install the packages.
 
