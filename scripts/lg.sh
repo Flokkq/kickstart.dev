@@ -1,5 +1,4 @@
-function lg()
-{
+function lg() {
     export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
 
     lazygit "$@"
